@@ -1,6 +1,6 @@
 def main():
     # We start from an 8 letter sequence
-    start = "AACCGGTT"
+    start = "GACCGGTT"
 
     # We finish on an 8 letter sequence
     end = "AAACGGTA"
@@ -29,7 +29,6 @@ def find_path(start,end,bank):
     paths = [[start]]
 
     while True:
-        print("Paths",paths)
         paths = extend_paths(paths,bank)
 
         if not paths:
